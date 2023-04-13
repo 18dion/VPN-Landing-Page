@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title></title>
+      <script src="jquery.js"></script>
+      <script>
+         function sub1()
+             {
+                 var u = f1.uname.value;
+                 var p2 ='(^[A-Z]{1,1})+([a-z]{1,10})$'
+         
+         
+                 if(u=="")
+                 {
+                    document.getElementById("err").innerHTML="Please fill user Name";
+                    err.style.color="red";
+                    return false;
+                 }
+                 if(!u.match(p2))
+                 {
+                   
+                   document.getElementById("err").innerHTML="name format not valid";
+                     f1.uname.focus();
+                      return false;
+                 }
+                 if(u.match(p2))
+                 {
+                   document.getElementById("err").innerHTML="valid name";
+                 }
+                   
+         
+                 }
+                 function sub2()
+             {
+              var p2= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                 var u = f1.em.value;
+                 if(u=="")
+                 {
+                    document.getElementById("err2").innerHTML="Please Enter your email";
+                    err.style.color="red";
+                    return false;
+                 }
+                 if(!u.match(p2))
+                 {
+                   document.getElementById("err2").innerHTML="email not valid";
+                     f1.em.focus();
+                      return false;
+                 }
+                 if(u.match(p2))
+                 {
+                   document.getElementById("err2").innerHTML="valid email";
+                 }
+         
+                 }
+                 function sub3()
+             {
+                 var u = f1.mob.value;
+                 var p2 ='(^[0-9]{10})$'
+         
+         
+                 if(u=="")
+                 {
+                    document.getElementById("err3").innerHTML="Please enter Mobile No.";
+                    err.style.color="red";
+                    return false;
+                 }
+                 if(!u.match(p2))
+                 {
+                   document.getElementById("err3").innerHTML="enter correct mobile no.";
+                     f1.mob.focus();
+                      return false;
+                 }
+                      if(u.match(p2))
+                 {
+                   document.getElementById("err3").innerHTML="valid mobile no.";
+                 }
+         
+                 }
+             
+      </script>
+      <script src="https://kit.fontawesome.com/278124d1e5.js" crossorigin="anonymous"></script>
+      <style type="text/css">
+         html{
+         scroll-behavior: smooth;
+         }
+         /*CSS FOR PART 1 OF PAGE*/
+         .back{
+         background-color: #9DC209;
+         }
+         .logo{
+         background-color: black;
+         }
+         .lhead{
+         color: white;
+         }
+         .lname{
+         margin-left: 120px;
+         margin-top:-50px;
+         }
+         .head1 {
+         text-decoration: none;
+         color: white;
+         text-align: right;
+         margin-top: -70px;
+         }
+         .head1:hover{
+         color:#9DC209 ;
+         }
+         .p1{
+         margin-top: 10px;
+         font-size: 100px;
+         margin-left: 100px;
+         margin-bottom: 10px;
+         }
+         .p1:hover{
+         color: white;
+         }
+         .b1{
+         border-radius: 70px;
+         width: 500px;
+         height: 56px;
+         background-color: black;
+         color: white;
+         margin-left: 100px;
+         border: solid white;
+         box-shadow: 5px 5px white;
+         }
+         .b1:hover{
+         background-color: white;
+         color: black;
+         border: solid black;
+         box-shadow: 5px 5px black;
+         position: relative;
+         }
+         .b1:active{
+         color: #9DC209;
+         }
+         .p2{
+         margin-left: 100px;
+         font-size: 20px;
+         }
+         .p3
+         {
+         font-family: monospace;
+         font-size: 30px;
+         margin-left: 100px;
+         }
+         u{
+         color: black;
+         }
+         .img1{
+         flex-wrap: wrap;
+         border: 5px solid;
+         width: 700px;
+         height: 500px;
+         margin-bottom:250px;
+         margin-left: 750px;
+         }
+         /* CSS FOR PART 2 OF PAGE*/
+         .p4{
+         background-color: white;
+         color: black;
+         text-align: center;
+         font-size: 50px;
+         }
+         .why{
+         flex-wrap: wrap;
+         column-count: 3;
+         column-gap: 3px;
+         text-align: justify;
+         }
+         .img2{
+         margin-left: 35px;
+         }
+         .img3{
+         margin-left: 35px;
+         }
+         .img4{
+         margin-left: 35px;
+         }
+         .p5{
+         font-size: 25px;
+         margin-left: 50px;
+         color: white;
+         }
+         .p6{
+         font-size: 20px;
+         margin-left: 50px;
+         color: white;
+         }
+         .p7{
+         font-size: 25px;
+         margin-left: 50px;
+         color: white;
+         }
+         .p8{
+         font-size: 20px;
+         margin-left: 50px;
+         color: white;
+         }
+         .p9{
+         font-size: 25px;
+         margin-left: 50px;
+         color: white;
+         }
+         .p10{
+         font-size: 20px;
+         margin-left: 50px;
+         color: white;
+         }
+         .b2{
+         border-radius: 70px;
+         width:700px;
+         height: 56px;
+         background-color: #9DC209;
+         color: white;
+         margin-bottom: 3px;
+         text-align: center;
+         margin-left:-650px;
+         border: solid white;
+         box-shadow: 5px 5px white;
+         }
+         .b2:hover{
+         background-color: white;
+         color:#9DC209 ;
+         border: solid #9DC209;
+         box-shadow: 5px 5px #9DC209;
+         }
+         .b2:active{
+         color: white;
+         }
+         /*CSS FOR Part 3*/
+         .back3{
+         background-color: white;
+         border-top: 5px solid white;
+         }
+         .p11{
+         color: black;
+         font-size: 50px;
+         text-align: center;
+         }
+         .supporthead{
+         text-align: center;
+         color: black;
+         font-size: 40px;
+         margin-right: 200px;
+         }
+         .p12{
+         margin-right: 200px;
+         text-align: left;
+         color: black;
+         font-size: 25px;
+         }
+         .cont
+         {
+         flex-wrap: wrap;
+         column-count: 2;
+         column-gap: 5px;
+         text-align: justify;
+         }
+         .btn{
+         border-radius: 70px;
+         width: 500px;
+         height: 56px;
+         background-color: black;
+         color: #9DC209;
+         margin-right: 200px;
+         border: solid #9DC209;
+         box-shadow: 5px 5px #9DC209;
+         }
+         .btn:hover{
+         background-color:#9DC209 ;
+         color: black;
+         border: solid black;
+         box-shadow: 5px 5px black;
+         }
+         .img5{
+         margin-left: 100px;
+         }
+         .supporthead1{
+         margin-left: 100px;
+         text-align: left;
+         color: black;
+         font-size: 40px;
+         }
+         .p13{
+         margin-left: 100px;
+         text-align: left;
+         color: black;
+         font-size: 25px;
+         }
+         .cont1
+         {
+         border-top: 5px solid black;
+         flex-wrap: wrap;
+         column-count: 2;
+         column-gap: 5px;
+         text-align: justify;
+         border-bottom: 5px solid black;
+         }
+         .btn1{
+         border-radius: 70px;
+         width: 500px;
+         height: 56px;
+         background-color: black;
+         color: #9DC209;
+         margin-left: 100px;
+         border: solid #9DC209;
+         box-shadow: 5px 5px #9DC209;
+         }
+         .btn1:hover{
+         background-color:#9DC209 ;
+         color: black;
+         border: solid black;
+         box-shadow: 5px 5px black;
+         margin-left: 100px;
+         }
+         .img6{
+         margin-top: 50px;
+         margin-left: 200px;
+         }
+         /*CSS for FORM*/
+         .fom{
+         font-size: 25px;
+         text-align: left;
+         padding-left: 100px;
+         }
+         .tf1 .tf2 .ttf{
+         text-align: right;
+         }
+         .sub{
+         border-radius: 70px;
+         width: 80px;
+         height: 36px;
+         background-color: black;
+         color: #9DC209;
+         margin-left: 100px;
+         border: solid #9DC209;
+         box-shadow: 5px 5px #9DC209;
+         }
+         .sub:hover{
+         background-color:#9DC209 ;
+         color: black;
+         border: solid black;
+         box-shadow: 5px 5px black;
+         margin-left: 100px; 
+         }
+         /*Footer Part CSS*/
+         .footer{
+         background-color:#9DC209 ;
+         }
+         .sc1{
+         border-top: 5px solid black;
+         }
+         .last{
+         background-color: black;
+         color: white;
+         padding: 10px;
+         }
+      </style>
+   </head>
+   <body bgcolor="black">
+      <div class="back">
+         <div class="lhead">
+            <div class="logo"><span><img src="zoroo (1).png" width="100"
+               height="100"></span></div>
+            <a href="#abt">
+               <p class="head1">About Us</p>
+            </a>
+            <h1 class="lname">ZORO VPN</h1>
+         </div>
+         <br><br>
+         <h1 ><span class="p1">The VPN that just works.</span></h1>
+         <div>
+            <p class="p2"><b>Exclusive offer: Get 3 extra months FREE</b></p>
+         </div>
+         <div ><input type="submit" onload="loadbtn()" class=b1 value="Start Your Risk Free Trial ->"></div>
+         <div>
+            <p class="p3"><u>30-DAY MONEY-BACK GUARANTEE</u></p>
+         </div>
+         <div></div>
+      </div>
+      <div class="back2">
+         <div>
+            <p class="p4">WHY ZORO VPN?</p>
+         </div>
+         <div class="why">
+            <div>
+               <img class="img2" src="com (1).png">
+               <div>
+                  <p class="p5"><b>Use on every device</b></p>
+               </div>
+               <div>
+                  <p class="p6">ZoroVPN works with just about everything.<br>Install the app on all your devices and<br> enjoy up to five simultaneous connections<br> with one subscription.</p>
+               </div>
+            </div>
+            <div>
+               <img class="img3" src="visual2 (1).png">
+               <div>
+                  <p class="p7"><b>Ultra-fast global access</b></p>
+               </div>
+               <div>
+                  <p class="p8">Our network of high-speed servers puts you in control. Appear to be in any of 94 countries worldwide and enjoy online freedom anywhere.</p>
+               </div>
+            </div>
+            <div>
+               <img class="img4" src="pro (1).png">
+               <div>
+                  <p class="p9"><b>Instant online protection</b></p>
+               </div>
+               <div>
+                  <p class="p10">Take charge of your digital security in one click. ZoroVPN’s best-in-class encryption keeps you safe and private on any network.</p>
+               </div>
+            </div>
+            <br><br><br><br><br>
+            <div><input type="submit" class="b2" value="GET ZORO VPN"></div>
+            <br><br>
+         </div>
+      </div>
+      <div class="back3">
+         <div>
+            <p class="p11">NEED HELP?</p>
+         </div>
+         <div class="cont">
+            <span><img class="img5" src="chat1 (1).png" width="300"
+               height="300"></span>
+            <h2 class="supporthead">Live, 24-hour customer support</h2>
+            <br>
+            <p class="p12">Real support from real people. We’re available through instant live chat and email to help you set up and troubleshoot</p>
+            <br>
+            <button class="btn">Contact Support</button>
+         </div>
+         <br><br><br><br><br>
+         <div class="cont1">
+            <h2 class="supporthead1">30-day money-back guarantee</h2>
+            <br>
+            <p class="p13">Our VPN is easy to use. So is our guarantee. If you’re not satisfied, we’ll refund your payment. No hassle, no risk.</p>
+            <div class="but"><button class="btn1">Get Zoro VPN</button></div>
+            <span><img class="img6" src="31.png" width="300"
+               height="300"></span>
+            <br><br><br>
+         </div>
+         <div class="knowmore">
+            <form class="fom" name="f1">
+               <h1>KNOW MORE</h1>
+               Name :<input type="text" name="uname" onkeyup="sub1()"  autocomplete="off"><br>
+               <h4 id="err"></h4>
+               <br>
+               Email :<input type="text" name="em" onkeyup="sub2()"  autocomplete="off"><br>
+               <h4 id="err2"></h4>
+               <br>
+               Contact (Whatsapp) :<input type="tel" name="mob" onkeyup="sub3()"  autocomplete="off"><br>
+               <h4 id="err3"></h4>
+               <br>
+               <input class="sub" type="submit" value="Submit">
+            </form>
+         </div>
+         <div class="footer">
+            <h2 class="sc1">About US</h2>
+            <p id="abt"><b>The internet was originally conceived as open, free, and not controlled by any single company or group—full of unlimited possibilities right at your fingertips. In its best moments, the online world still exemplifies that spirit, but more often than not it seems that we’ve ceded our freedom online to others. Corporations, governments, and hackers are now able to monitor, manipulate, and restrict in once-unimaginable ways. That feeling of individual control and empowerment—it’s something we’ve lost along the way.
+               <br><br>ExpressVPN wants to enable you to take back that control and experience an internet that is free and open, where individuals are protected and have the power to shape their own online experience. We work every day to ensure that protecting your privacy and security is easy and accessible, no matter your level of technical expertise. As every aspect of our lives becomes increasingly digital, we believe that protecting online rights and freedoms for all has never been more essential. 
+               <br><br>Today, ExpressVPN enables millions in over 180 countries to access the free and open internet—and to do so privately and securely.
+            </p>
+            <br></p>
+            <p class="last">
+               <b>© 2023 ZoroVPN. All rights reserved.</b>
+            </p>
+         </div>
+      </div>
+   </body>
+</html>
